@@ -1,20 +1,31 @@
-const buttonsList = document.querySelectorAll(".tecla");
+const buttonsList = document.querySelector(".teclado");
 const soundsList = document.querySelectorAll("audio");
 
-let pom = document.querySelector("#som_tecla_pom");
-
-buttonsList.forEach((buttonsListItem) => {
-  buttonsListItem.addEventListener("click", (e) => {
-
-    const button = e.target.classList[1].split("_")[1];
-
-    soundsList.forEach((play) => {
-
-      const audio = play.id.split("_")[2];
-
-      if (button === audio) {
-        play.play();
-      }
-    });
+function setupEvents() {
+  
+  buttonsList.addEventListener("click", (buttonElement) => {
+    playAudio(buttonElement);
+    buttonElement.target.classList.add("ativa");
   });
-});
+
+  buttonsList.addEventListener("keyup", (buttonElement) => {
+    if (buttonElement.key === "Enter") {
+      buttonElement.target.classList.remove("ativa");
+    }
+  });
+
+}
+
+function playAudio(audioElement) {
+  const audioName = audioElement.target.classList[1].split("_")[1];
+
+  const selectedAudio = [...soundsList].find((sound) => {
+    const soundId = sound.id.split("_")[2];
+    return soundId === audioName;
+  });
+
+  selectedAudio.play();
+}
+
+setupEvents();
+
