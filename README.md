@@ -43,7 +43,7 @@ Melhoria das habilidades de desenvolvimento front-end.
 Este projeto está licenciado sob a MIT License.
 
 ## 📜 Certificado
-Eu concluí este projeto como parte do curso. Meu certificado: [JavaScript para Web: Crie páginas dinâmicas da Alura.](https://cursos.alura.com.br/certificate/2cb94bc9-6350-4ce9-a460-79c41eba5bf6?lang)
+Eu concluí este projeto como parte do curso. Acesse [meu certificado aqui](https://cursos.alura.com.br/certificate/2cb94bc9-6350-4ce9-a460-79c41eba5bf6?lang) 👈
 
 Sinta-se à vontade para explorar, contribuir ou utilizar este projeto como referência para seus próprios estudos e projetos! 🎉
 
