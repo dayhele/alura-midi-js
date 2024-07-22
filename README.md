@@ -25,7 +25,7 @@ O **Alura Midi** é um programa interativo que permite a execução de sons ao c
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/alura-midi.git
+   git clone https://github.com/dayhele/alura-midi.git
    ```
    
 Navegue até o diretório do projeto:
